@@ -93,7 +93,7 @@ section.banner .container .elm-01 {
   position: absolute;
   right: -15%;
   bottom: 0;
-  max-width: 600px;
+  max-width: 500px;
   z-index: 0;
 }
 
@@ -118,7 +118,7 @@ section.banner .container .text-wap {
 }
 
 section.banner .container h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   color: white;
   font-weight: bold;
 }
