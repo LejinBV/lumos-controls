@@ -248,8 +248,8 @@ section.banner .container .app-link a img {
 }
 
 .section-5 .container {
-  height: 170%;
   position: relative;
+  height: 100vh;
 }
 
 @media (max-width: 890px) {
@@ -309,6 +309,12 @@ section.banner .container .app-link a img {
 
 .section-6 .container {
   display: block;
+}
+
+@media (max-width: 890px) {
+  .section-6 .container {
+    height: 650px;
+  }
 }
 
 .section-6 .contact-form {

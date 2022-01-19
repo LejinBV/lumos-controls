@@ -200,8 +200,8 @@ section.banner{
         background-size: 170%;
     }
     .container{
-        height: 170%;
         position: relative;
+        height: 100vh;
         @media (max-width:890px) {
             height: 650px;
         }
@@ -254,6 +254,9 @@ section.banner{
     background: white;
     .container{
         display: block;
+        @media (max-width:890px) {
+            height: 650px;
+        }
     }
     .contact-form{
         max-width: 600px;
