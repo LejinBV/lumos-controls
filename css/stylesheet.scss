@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap');
+@import "var";
+html{
+    font-size: .9rem;
+    @media (max-width:1180px){
+        font-size: .5rem;
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    overflow-x: hidden;
+}
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+p{
+    font-size: 1.563rem;
+}
+.title-2{
+    font-size: 5.688rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.title-3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.btn{
+    padding: 20px 60px;
+    border-radius:50px;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    &.btn-primary{
+        background: $g;
+        color: white;
+        border: none 0; 
+    }
+    &.btn-secondary{
+        background: transparent;
+        color: white;
+        border: 1px solid $g;
+    }
+}
+section.banner{
+    background: $p-c;
+    min-height: 680px;
+    .container{
+        position: relative;
+        height: 100vh;
+        display: flex;
+    
+        .logo{
+            position: absolute;
+            right: 0;
+            top: 50px;
+            max-width: 300px;
+        }
+        .elm-01{
+            position: absolute;
+            right: -15%;
+            bottom: 0;
+            max-width: 600px;
+            z-index: 0;
+            @media (max-width:980px) {
+                display: none;
+            }
+        }
+        .text-wap{
+            margin-top: auto;
+            margin-bottom: 100px;
+            max-width: 760px;
+            position: relative;
+            z-index: 1;
+            @media (max-width:980px) {
+               margin-bottom: 20px;
+            }
+        }
+        h1{
+            font-size: 8rem;
+            color: white;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+            font-size: 2.25rem;
+        }
+        .app-link{
+            display: flex;
+            height: 50px;
+            margin-top: 50px;
+            a{
+                margin-right: 30px;
+                img{
+                    max-height: 70px;
+                }
+            }
+        }
+    }
+}
+
+
+.section-2{
+    padding: 100px 0;
+    .col-sm-6{
+        display: flex;
+    }
+    .cn-wrap{
+        position: relative;
+        padding-left: 50px;
+        margin-top: 50px;
+        padding-right: 50px;
+        &::before{
+            position: absolute;
+            left: 15px;
+            width: 20px;
+            height: 10px;
+            background: $p-c;
+            top: 8px;
+            content: "";
+            display: block;
+        }
+    }
+}
+
+.section-3{
+    background: $p-c ;
+    position: relative;
+    .wire-globe{
+        position: absolute;
+        right: 0;
+        bottom: -160px;
+        max-width: 390px;
+    }
+    .container{
+        height: 100vh;
+        min-height: 600px;
+        .con-w{
+            // max-width: 400px;
+            margin: auto;
+        }
+        .title-2, .title-3, p{
+            color: white;
+        }
+        .title-3{
+            font-weight: normal;
+            margin-top: 50px;
+        }
+        .row{
+            margin: auto 0;
+            .col-sm-6{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .btn-secondary{
+            margin-top: 50px;
+        }
+    }
+}
+
+.section-4{
+    @extend .section-3;
+    background: $l-b url(../images/mobile-screens.png) no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    .title-2, .title-3, p{
+        color:  inherit !important;
+    }
+    .container{
+        .con-w{
+            max-width: 860px;
+        }
+    }
+}
+
+.section-5{
+    background: url(../images/sayhellobg.png) bottom no-repeat;
+    background-size: 50%;
+    text-align: center;
+    @media (max-width:890px) {
+        background-size: 170%;
+    }
+    .container{
+        height: 170%;
+        position: relative;
+        @media (max-width:890px) {
+            height: 650px;
+        }
+    }
+    .title-5{
+        font-size: 8.188rem;
+        font-weight: 100;
+        margin-top: 100px;
+        small{
+            display: block;
+            font-size: 3.75rem;
+            font-weight: bold;
+            color: black;
+        }
+    }
+    .btn-tertiary{
+        position: absolute;
+        left: 50%;
+        margin-left:-140px;
+        background: white;
+        bottom: 30px;
+        display: inline-block;
+        small{
+            margin-left: 4px;
+            background: black;
+            color: white;
+            border-radius: 50%;
+            padding: 6px 6px 6px 8px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            text-align: center;
+            
+            &::before{
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 4px 0 4px 6px;
+                border-color: transparent transparent transparent #ffffff;
+            }
+        }
+    }
+}
+
+.section-6{
+    @extend .section-4;
+    background: white;
+    .container{
+        display: block;
+    }
+    .contact-form{
+        max-width: 600px;
+        margin: auto;
+        width: 100%;
+        .hbspt-form{
+            .input{
+                input{
+                    border: 0 none;
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
+    }
+    @media (max-width:890px) {
+        .container .row .col-sm-6{
+            height: 650px;
+
+        }
+    }
+}
+
+footer{
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    .col-sm-6{
+        display: flex;
+        font-size: 1rem;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        li{
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 60px;
+            a{
+                display: block;
+                width: 20px;
+            }
+        }
+    }
+}
