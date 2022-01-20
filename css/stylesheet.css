@@ -315,7 +315,7 @@ section.banner .container .app-link a img {
 
 @media (max-width: 890px) {
   .section-6 .container {
-    height: 650px;
+    height: initial;
   }
 }
 
@@ -323,6 +323,7 @@ section.banner .container .app-link a img {
   max-width: 600px;
   margin: auto;
   width: 100%;
+  min-height: 400px;
 }
 
 .section-6 .contact-form .hbspt-form .input input {
@@ -331,8 +332,11 @@ section.banner .container .app-link a img {
 }
 
 @media (max-width: 890px) {
+  .section-6 {
+    padding: 100px 0 0;
+  }
   .section-6 .container .row .col-sm-6 {
-    height: 650px;
+    height: initial;
   }
 }
 
