@@ -254,16 +254,18 @@ section.banner{
 .section-6{
     @extend .section-4;
     background: white;
+
     .container{
         display: block;
         @media (max-width:890px) {
-            height: 650px;
+            height: initial;
         }
     }
     .contact-form{
         max-width: 600px;
         margin: auto;
         width: 100%;
+        min-height: 400px;
         .hbspt-form{
             .input{
                 input{
@@ -274,8 +276,9 @@ section.banner{
         }
     }
     @media (max-width:890px) {
+        padding: 100px 0 0;
         .container .row .col-sm-6{
-            height: 650px;
+            height: initial;
 
         }
     }
