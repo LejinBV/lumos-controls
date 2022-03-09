@@ -1,24 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap");
 html {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1180px) {
   html {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000;
   overflow-x: hidden;
 }
 
 @media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
     max-width: 1400px;
   }
 }
@@ -50,6 +54,23 @@ p {
   margin-bottom: 25px;
 }
 
+.title-breath {
+  font-size: 6rem;
+  font-weight: 100;
+  color: #000;
+  line-height: 50px;
+  margin-bottom: 3rem;
+}
+
+.title-breath small {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.title-breath small b {
+  font-weight: 600;
+}
+
 .btn {
   padding: 20px 60px;
   border-radius: 50px;
@@ -67,6 +88,12 @@ p {
   background: transparent;
   color: white;
   border: 1px solid #41CD9E;
+}
+
+.btn.btn-yellow {
+  background: #E0E61D;
+  color: #000;
+  border: 1px solid #E0E61D;
 }
 
 section.banner {
@@ -146,6 +173,33 @@ section.banner .container .app-link a img {
   max-height: 70px;
 }
 
+section.banner.banner-rtf {
+  min-height: inherit;
+  margin-bottom: 150px;
+}
+
+section.banner.banner-rtf .container {
+  height: auto;
+}
+
+section.banner.banner-rtf .container .elm-01 {
+  bottom: -120px;
+}
+
+@media (max-width: 980px) {
+  section.banner.banner-rtf .container .elm-01 {
+    display: block;
+    bottom: -240px;
+    max-width: 320px;
+    right: 50%;
+    margin-right: -170px;
+  }
+}
+
+section.banner.banner-rtf .text-wap {
+  margin: 240px 0 100px;
+}
+
 .section-2 {
   padding: 100px 0;
 }
@@ -195,11 +249,20 @@ section.banner .container .app-link a img {
   margin: auto;
 }
 
-.section-3 .container .title-2, .section-4 .container .title-2, .section-6 .container .title-2, .section-3 .container .title-3, .section-4 .container .title-3, .section-6 .container .title-3, .section-3 .container p, .section-4 .container p, .section-6 .container p {
+.section-3 .container .title-2, .section-4 .container .title-2, .section-6 .container .title-2,
+.section-3 .container .title-3,
+.section-4 .container .title-3,
+.section-6 .container .title-3,
+.section-3 .container p,
+.section-4 .container p,
+.section-6 .container p {
   color: white;
 }
 
-.section-3 .container .title-3, .section-4 .container .title-3, .section-6 .container .title-3 {
+
+.section-3 .container .title-3,
+.section-4 .container .title-3,
+.section-6 .container .title-3 {
   font-weight: normal;
   margin-top: 50px;
 }
@@ -229,7 +292,11 @@ section.banner .container .app-link a img {
   background-size: contain;
 }
 
-.section-4 .title-2, .section-6 .title-2, .section-4 .title-3, .section-6 .title-3, .section-4 p, .section-6 p {
+.section-4 .title-2, .section-6 .title-2,
+.section-4 .title-3,
+.section-6 .title-3,
+.section-4 p,
+.section-6 p {
   color: inherit !important;
 }
 
@@ -376,5 +443,139 @@ footer ul li {
 footer ul li a {
   display: block;
   width: 20px;
+}
+
+.retrofit-ft {
+  padding: 100px 0;
+}
+
+.retrofit-ft .row .col-sm-6 {
+  margin-bottom: 2.5rem;
+}
+
+.retrofit-ft .ft-inner-wrapp {
+  border: 1px solid #B4B1BC;
+  padding: 4rem;
+  height: 100%;
+}
+
+.rtf-dwonload {
+  height: 629px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #7638FF;
+}
+
+.rtf-dwonload .title-2 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+  .rtf-dwonload .title-2 {
+    text-align: center;
+  }
+}
+
+.rtf-dwonload .btn-yellow {
+  margin: auto;
+}
+
+@media (max-width: 980px) {
+  .rtf-dwonload .btn-yellow {
+    margin-top: 50px;
+  }
+}
+
+.rtf-dwonload .container {
+  margin: auto;
+}
+
+.rtf-gal {
+  padding: 200px 0;
+  /* Slow-motion Zoom Container */
+  /* The Transformation */
+}
+
+.rtf-gal .img-hover-zoom {
+  height: 416px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 980px) {
+  .rtf-gal .img-hover-zoom {
+    margin-bottom: 30px;
+  }
+}
+
+.rtf-gal .img-hover-zoom .label {
+  background: #fff;
+  bottom: 55px;
+  padding: 10px;
+  color: #000;
+  font-size: 2.5rem;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.rtf-gal .img-hover-zoom--slowmo img {
+  -webkit-transform-origin: 50% 65%;
+          transform-origin: 50% 65%;
+  -webkit-transition: -webkit-transform 10s, -webkit-filter 10s ease-in-out;
+  transition: -webkit-transform 10s, -webkit-filter 10s ease-in-out;
+  transition: transform 10s, filter 10s ease-in-out;
+  transition: transform 10s, filter 10s ease-in-out, -webkit-transform 10s, -webkit-filter 10s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 416px;
+}
+
+.rtf-gal .img-hover-zoom--slowmo:hover img {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.sayhello {
+  padding: 200px 0;
+  position: relative;
+}
+
+.sayhello:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #eee;
+  right: 30%;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+
+.sayhello .txt-wraper {
+  margin: auto;
+  max-width: 440px;
+  margin-left: 0;
+}
+
+.rtf-contact {
+  padding: 200px 0;
+}
+
+.rtf-contact .con-w {
+  max-width: 450px;
+}
+
+.rtf-contact .title-breath {
+  font-size: 3.125rem;
+}
+
+.rtf-contact .title-breath small {
+  font-weight: 300;
 }
 /*# sourceMappingURL=stylesheet.css.map */
