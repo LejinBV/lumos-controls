@@ -111,9 +111,15 @@ section.banner .container {
 
 section.banner .container .logo {
   position: absolute;
-  left: 0;
-  top: 40px;
-  max-width: 280px;
+  left: 22px;
+  top: 47px;
+  width: 190px;
+}
+
+@media (max-width: 980px) {
+  section.banner .container .logo {
+    width: 130px;
+  }
 }
 
 section.banner .container .elm-01 {
@@ -410,6 +416,7 @@ section.banner.banner-rtf .text-wap {
 footer {
   padding: 30px 0;
   border-top: 1px solid #eee;
+  text-align: center;
 }
 
 footer .col-sm-6 {
@@ -430,6 +437,14 @@ footer ul {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media (max-width: 890px) {
+  footer ul {
+    margin: auto;
+    margin-top: 21px;
+    width: 150px;
+  }
 }
 
 footer ul li {
