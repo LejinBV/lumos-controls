@@ -337,7 +337,9 @@ section.banner {
 footer {
   padding: 30px 0;
   border-top: 1px solid #eee;
-  text-align: center;
+  @media (max-width:890px) {
+    text-align: center;
+  }
   .col-sm-6 {
     display: flex;
     font-size: 1rem;
