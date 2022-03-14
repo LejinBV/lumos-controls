@@ -416,7 +416,12 @@ section.banner.banner-rtf .text-wap {
 footer {
   padding: 30px 0;
   border-top: 1px solid #eee;
-  text-align: center;
+}
+
+@media (max-width: 890px) {
+  footer {
+    text-align: center;
+  }
 }
 
 footer .col-sm-6 {
