@@ -590,6 +590,12 @@ footer ul li a {
   margin: 0 20px;
 }
 
+@media (max-width: 980px) {
+  .fctrl-dwonload .btn-wrap .btn {
+    margin-bottom: 20px;
+  }
+}
+
 .rtf-gal {
   padding: 200px 0;
   /* Slow-motion Zoom Container */
@@ -649,6 +655,12 @@ footer ul li a {
   position: relative;
 }
 
+@media (max-width: 980px) {
+  .sayhello {
+    padding: 100px 0;
+  }
+}
+
 .sayhello:after {
   position: absolute;
   content: "";
@@ -659,6 +671,12 @@ footer ul li a {
   bottom: 0;
   display: block;
   z-index: -1;
+}
+
+@media (max-width: 980px) {
+  .sayhello:after {
+    right: 0%;
+  }
 }
 
 .sayhello .txt-wraper {
