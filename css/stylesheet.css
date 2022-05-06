@@ -289,9 +289,11 @@ section.banner.banner-fctrl.dali-ctrl .text-wap p {
   }
 }
 
-section.banner.banner-fctrl.dali-ctrl .elm-01 {
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
+@media (max-width: 768px) {
+  section.banner.banner-fctrl.dali-ctrl .elm-01 {
+    -webkit-transform: rotate(48deg);
+            transform: rotate(48deg);
+  }
 }
 
 .section-2 {
