@@ -211,6 +211,33 @@ section.banner {
         max-width: 100%;
       }
     }
+    // Dali controller banner style
+    &.dali-ctrl{
+      .text-wap{
+        h1{
+          font-size: 5rem;
+          line-height: 6rem;
+        }
+        p{
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+        @media (max-width:768px) {
+          h1{
+            font-size: 3rem;
+            line-height: 4rem;
+          }
+          p{
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+        }
+      }
+      .elm-01{
+        transform: rotate(48deg);
+      }
+    }
+    // Dali controller banner style
   }
 }
 
