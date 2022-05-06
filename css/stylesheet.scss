@@ -233,9 +233,13 @@ section.banner {
           }
         }
       }
-      .elm-01{
+      .elm-01 {
         @media (max-width:768px) {
-          transform: rotate(48deg);
+          overflow-x: hidden;
+          overflow-y: clip;
+          img{
+            transform: rotate(48deg);
+          }
         }
       }
     }
