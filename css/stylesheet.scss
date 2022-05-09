@@ -233,8 +233,12 @@ section.banner {
           }
         }
       }
+      .btn{
+        margin-top: 50px;
+      }
       .elm-01{
-        transform: rotate(48deg);
+        max-width: 800px;
+        bottom: -250px;
       }
     }
     // Dali controller banner style
