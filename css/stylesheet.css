@@ -289,15 +289,13 @@ section.banner.banner-fctrl.dali-ctrl .text-wap p {
   }
 }
 
-@media (max-width: 768px) {
-  section.banner.banner-fctrl.dali-ctrl .elm-01 {
-    overflow-x: hidden;
-    overflow-y: clip;
-  }
-  section.banner.banner-fctrl.dali-ctrl .elm-01 img {
-    -webkit-transform: rotate(48deg);
-            transform: rotate(48deg);
-  }
+section.banner.banner-fctrl.dali-ctrl .btn {
+  margin-top: 50px;
+}
+
+section.banner.banner-fctrl.dali-ctrl .elm-01 {
+  max-width: 800px;
+  bottom: -250px;
 }
 
 .section-2 {
