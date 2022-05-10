@@ -268,9 +268,14 @@ section.banner.banner-fctrl .text-wap {
   }
 }
 
+section.banner.banner-fctrl.dali-ctrl {
+  height: calc(950px - 100px);
+}
+
 section.banner.banner-fctrl.dali-ctrl .text-wap h1 {
   font-size: 5rem;
   line-height: 6rem;
+  margin-top: 50px;
 }
 
 section.banner.banner-fctrl.dali-ctrl .text-wap p {

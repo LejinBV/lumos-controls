@@ -213,10 +213,12 @@ section.banner {
     }
     // Dali controller banner style
     &.dali-ctrl{
+      height: calc(950px - 100px);
       .text-wap{
         h1{
           font-size: 5rem;
           line-height: 6rem;
+          margin-top: 50px;
         }
         p{
           font-size: 1.5rem;
